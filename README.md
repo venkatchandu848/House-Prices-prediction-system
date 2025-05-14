@@ -1,38 +1,42 @@
 # House Prices Prediction System
 
-This project is about predicting the house prices based on some data we have like Lot Area, Year built, Area, Number of rooms and so on. This project does the Exploratory data analysis (EDA), integrate MLOps Practices using ZenML, MLFlow. Also, implements CI/CD pipelines to automate testing, deployement of model. 
+This project focuses on predicting the house prices using structured data such as Lot Area, Year built, Area, Number of rooms and more. It covers the full machine learning lifecycle including Exploratory Data Analysis (EDA), model development, and deployment. The project also integrates MLOps practices using ZenML and MLflow , and implements CI/CD pipelines to automate testing and deployment processes.
 
 
-# Data
 
-We have a data file (csv format) of above said features. The data file is uploaded here ()
+# 📁 Data
+
+We have a data file (csv format) of above said features. The data file is uploaded [here] (https://github.com/venkatchandu848/House-Prices-prediction-system/tree/main/data)
 
 # Data Exploring
 
-- Step-1: Data Exploring
+Step-1: Data Exploring
 
-Initially, data exploring is done, where some functions are defined to know summary statistics for both numerical and categorical features.
+Initially, data exploring is done to understand the structure of data, where some custom functions are defined to know summary statistics for both numerical and categorical features.
 
-- Step-2: Missing value analysis
+Step-2: Missing value analysis
 
-This handles the missing values: data has significant, moderate and single missing values. These are dealt accordingly either filling with mean or mode, impute missing values with placeholder or drop the columns
+Missing values ​​are handled based on their severity:
 
-- Step-3: Handling outliers
+- High missingness : Columns are dropped if missing data is excessive.
 
-Potential outliers are found in some features. These needs to be detected to avoid skewing model predictions.
+- Moderate/single missingness : Missing values ​​are imputed using mean, mode or placeholders.
 
-- Step-4: Feature engineering
+Step-3: Handling outliers
 
-Correlation analysis need to be found among the features. 
+Outliers are identified using statistical techniques to prevent skewed model training and ensure robust predictions.
 
-# Model Building
+Step-4: Feature engineering
 
-After proper data analysis, important features has been found and a Linear Regression model is chosen to train and predict the house prices. MLFlow is used to track the metrics of training
+Correlation analysis is conducted to identify relationships between features and the target variable, redundant ones found and removed based on insights.
+
+# 🤖 Model Building
+
+After proper data analysis, important features have been found and a Linear Regression model is chosen to train on selected features, its performance metrics are tracked and logged using MLFlow
 
 # Deployement
 
-ZenML is used for deployement. 
-
+Deployment is handled using ZenML , which manages the ML pipeline, including data preprocessing, model training, evaluation, and deployment stages.
 
 
 
