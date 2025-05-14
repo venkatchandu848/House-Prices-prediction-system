@@ -1,4 +1,4 @@
-# Prices-prediction-system
+# House Prices Prediction System
 
 This project is about predicting the house prices based on some data we have like Lot Area, Year built, Area, Number of rooms and so on. This project does the Exploratory data analysis (EDA), integrate MLOps Practices using ZenML, MLFlow. Also, implements CI/CD pipelines to automate testing, deployement of model. 
 
