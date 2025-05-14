@@ -6,7 +6,7 @@ This project focuses on predicting the house prices using structured data such a
 
 # 📁 Data
 
-We have a data file (csv format) of above said features. The data file is uploaded [here] (https://github.com/venkatchandu848/House-Prices-prediction-system/tree/main/data)
+We have a data file (csv format) of above said features. The data file is uploaded [here](https://github.com/venkatchandu848/House-Prices-prediction-system/tree/main/data)
 
 # Data Exploring
 
